@@ -3,10 +3,10 @@ import json
 
 r = requests.get("https://opentdb.com/api.php?amount=10&type=boolean")
 
-resonse = r.text
+response = r.text
 # print(resonse)
 
-data_load = json.loads(resonse)
+data_load = json.loads(response)
 ques = data_load["results"]
 
 question_d = []
